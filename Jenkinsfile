@@ -2,11 +2,10 @@ pipeline {
     agent any
 
     tools {
-        maven 'sonarmaven'
+        maven 'sonar-maven'
     }
 
     environment {
-        SONARQUBE_SERVER = 'sonarqube'
         SONAR_TOKEN = credentials('sonar-token')  
     }
 
