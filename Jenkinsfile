@@ -40,8 +40,7 @@ pipeline {
             steps {
                 bat '''
                 mvn clean verify sonar:sonar \
-               -Dsonar.projectKey=mv-t2\
-               -Dsonar.projectName="mv-t2" \
+               -Dsonar.projectKey=Maven_Project\
                -Dsonar.host.url=http://localhost:9000 \
                -Dsonar.sources=src/main/java \
                -Dsonar.test.inclusions=src/test/java/**/*.java \
